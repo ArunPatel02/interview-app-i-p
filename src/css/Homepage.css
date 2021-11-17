@@ -1,0 +1,150 @@
+.home_page .graph {
+  width: 300px;
+  margin: auto;
+  margin-top: 30px;
+  min-width: 300px;
+}
+.card .heading_content {
+  padding: 10px 10px;
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  margin: 30px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  box-shadow: -9px 8px 10px #80808078;
+  background: linear-gradient(45deg, #ff980099, transparent);
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .heading_content .icons {
+  gap: 10px;
+  display: flex;
+  position: relative;
+}
+
+.card .heading_content .icons svg {
+  font-size: 2.1rem;
+  cursor: pointer;
+}
+
+.card .heading_content .icons svg.hide {
+  pointer-events: none;
+}
+
+.card .heading_content .icons svg.hideoff {
+  position: absolute;
+  right: 0;
+  display: none;
+}
+
+.card .heading_content .icons svg.hideoff.active {
+  display: block;
+  pointer-events: all;
+}
+.card .heading_content .icons svg.hide.active {
+  display: block;
+  pointer-events: all;
+}
+
+.card .addcard {
+  display: flex;
+  margin: 0px 20px;
+  justify-content: space-between;
+  align-items: center;
+  height: 0px;
+  margin-top: -27px;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.card .addcard.active {
+  height: 70px;
+}
+
+.card .addcard #name {
+  height: 30px;
+  padding: 0px 10px;
+  font-size: 1.6rem;
+  /* min-width: 200 px; */
+  width: 100%;
+}
+
+.card .addcard .skill {
+  font-size: 1.6rem;
+}
+
+.card .addcard button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background: orange;
+  cursor: pointer;
+}
+
+.card .user_card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  margin: 20px 10px;
+  margin-bottom: 0;
+}
+
+.card .user_card .user_details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.411);
+  border-radius: 10px;
+  padding: 10px 0px;
+}
+.card .user_card .user_details .image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.card .user_card .user_details .image img {
+  width: 80%;
+  margin: auto;
+}
+
+.card .user_card .user_details .name {
+  font-size: 1.7rem;
+}
+.card .user_card .user_details .skill {
+  font-size: 1.4rem;
+}
+
+.card .user_card .user_details button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background: #ffa50073;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  position: relative;
+  cursor: pointer;
+}
+
+.card .user_card .user_details button p {
+  z-index: 10;
+}
+
+.card .user_card .user_details button .hover {
+  width: 0%;
+  height: 100%;
+  background: #f1efefa6;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 0.3s;
+}
+
+.card .user_card .user_details button:hover .hover {
+  width: 100%;
+}
