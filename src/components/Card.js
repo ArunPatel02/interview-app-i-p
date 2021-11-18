@@ -23,7 +23,7 @@ const Card = ({appointies}) => {
         e.preventDefault();
         setappointiesdata([...appointiesdata , {name : name , skill : appointies[0].skill}])
         const data = await addappointies({name : name , skill : appointies[0].skill})
-        if (data.success === "true") {
+        if (data.success === true) {
             alert("created successfully");
         }
         else{

@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from "react";
+import React, { useState } from "react";
 import { createContext } from "react";
 
 export const Appointiescontext = createContext();
